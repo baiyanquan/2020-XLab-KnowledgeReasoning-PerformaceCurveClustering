@@ -6,7 +6,7 @@ import ast
 
 class PerformanceData:
 
-    def __init__(self, base_path="data/"):
+    def __init__(self, base_path="./entity/"):
         self.performance_data = {}
         self.file_name = []
         self.base_path = base_path

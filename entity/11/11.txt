@@ -1,0 +1,7 @@
+{"start_time":"2020-04-11 10:40:04.146492","ip":"192.168.199.43","position":"cpu","cmd":"./blade create cpu fullload --timeout 600","cmd_id":"ebfa14fa200e3349"}
+{"start_time":"2020-04-11 12:40:07.979474","ip":"192.168.199.44","position":"mem","cmd":"./blade create mem load --mem-percent 96 --timeout 600","cmd_id":"28c4db3a1e909752"}
+{"start_time":"2020-04-11 14:40:03.857737","ip":"192.168.199.45","position":"disk","cmd":"./blade create disk burn --read --timeout 600","cmd_id":"82317852933c27b3"}
+{"start_time":"2020-04-11 16:41:04.799522","ip":"192.168.199.45","position":"network","cmd":"./blade create network delay --interface enp2s0 --time 1000 --timeout 600","cmd_id":"c240c9a3dea5404c"}
+{"start_time":"2020-04-11 18:40:13.985922","ip":"192.168.199.45","position":"k8s","cmd":"./blade create k8s delete --namespace sock-shop --pod front-end-858b4ff57-zc246","cmd_id":"3d968291eaca81b0"}
+{"start_time":"2020-04-11 20:40:04.132352","ip":"192.168.199.43","position":"network","cmd":"./blade create network delay --interface enp2s0 --time 1000 --timeout 600","cmd_id":"e009f4240063a4f1"}
+{"start_time":"2020-04-11 22:40:09.893975","ip":"192.168.199.42","position":"k8s","cmd":"./blade create k8s delete --namespace sock-shop --pod catalogue-db-99cbcbb88-29c8p","cmd_id":"08d1bc335f613f2b"}

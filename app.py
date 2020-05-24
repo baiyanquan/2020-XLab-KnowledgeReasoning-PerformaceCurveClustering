@@ -138,4 +138,4 @@ def predict():
 app.route('/api/v1.0/')
 cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True, port=5000, host='0.0.0.0')

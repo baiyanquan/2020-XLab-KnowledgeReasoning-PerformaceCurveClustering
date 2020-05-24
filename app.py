@@ -1,3 +1,5 @@
+import os
+
 from flask import Flask, jsonify, request
 from service.cluster import Cluster
 from service.picture_construct import PictureConstruct

@@ -10,6 +10,7 @@ RUN git clone https://gitee.com/baiyanquan/KnowledgeReasoning-PerformaceCurveClu
     && pip install flask_cors -i https://pypi.tuna.tsinghua.edu.cn/simple\
         && pip install numpy -i https://pypi.tuna.tsinghua.edu.cn/simple\
         && pip install pandas -i https://pypi.tuna.tsinghua.edu.cn/simple\
+        && pip install h5py -i https://pypi.tuna.tsinghua.edu.cn/simple\
         && pip install matplotlib -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 CMD ["python", "/root/PerformaceCurveClustering/app.py"]

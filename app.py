@@ -2,6 +2,7 @@ import os
 
 from flask import Flask, jsonify, request
 from service.cluster import Cluster
+from service.reasoner import Reasoner
 from service.picture_construct import PictureConstruct
 from service.result_comparison import ResultComparison
 from flask_cors import CORS
@@ -133,6 +134,13 @@ def predict():
     file = request.files['file']
 
     return jsonify(cluster.predict(service, model, distance_type, folder, file))
+
+
+@app.route('/api/v1.0/reason', methods=['POST'])
+def reason():
+    anomaly_expression = request.form['anomaly_expression']
+
+    return jsonify(Reasoner.reason_by_anomaly_expression(anomaly_expression))
 
 
 app.route('/api/v1.0/')
